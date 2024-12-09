@@ -50,8 +50,10 @@ function userGrid() {
     changeGridButton.addEventListener("click", () => {
         let rowPrompt = prompt("Enter the number of rows")
         let columnPrompt = prompt("Enter the number of columns")
+        //checks if user prompts are valid
         if (rowPrompt!= null && columnPrompt != null) {
             const containerParent = document.getElementById("container");
+            //if container exists (previous grid exists), then clears it
             if (containerParent.hasChildNodes()) {
                 containerParent.innerHTML = "";
 
